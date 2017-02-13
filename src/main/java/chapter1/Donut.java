@@ -5,5 +5,5 @@ package chapter1;
  */
 public class Donut {
 
-	public float price;
+	public int price;
 }

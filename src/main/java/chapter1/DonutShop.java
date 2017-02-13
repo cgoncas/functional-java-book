@@ -5,8 +5,9 @@ package chapter1;
  */
 public class DonutShop {
 
-	public static Donut buyDonut(CreditCard creditCard) {
+	public static Tuple<Donut,Payment> buyDonut(CreditCard creditCard) {
 		Donut donut = new Donut();
-		return donut;
+		Payment payment = new Payment(creditCard, donut.price);
+		return new Tuple<Donut, Payment>(donut, payment);
 	}
 }
